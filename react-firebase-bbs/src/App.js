@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Header, MainNav, BBsMain, BBsWrite, Login, Join } from "./comps/index";
+import { Header, MainNav, BBsMain, BBsWrite, Login, Join } from "./comps";
 import { Route, BrowserRouter } from "react-router-dom";
 
 function App() {

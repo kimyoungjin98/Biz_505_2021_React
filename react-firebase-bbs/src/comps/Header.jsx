@@ -5,7 +5,7 @@ function Header() {
     <div>
       <header className="App-header">
         <h1>REACT BBS 2021</h1>
-        <h3>React & Firebase BBS</h3>
+        <h3>React &amp; Firebase BBS</h3>
       </header>
     </div>
   );
