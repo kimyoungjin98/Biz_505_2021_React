@@ -1,6 +1,7 @@
 # API KEY
 
-FirebaseConfig.\*
+FirebaseConfig.js
+BBSConfig.js
 
 # Logs
 
