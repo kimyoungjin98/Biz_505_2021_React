@@ -1,29 +1,34 @@
 import React, { useEffect, useState } from "react";
 import { fireStore } from "../config/BBSConfig";
+import { useHistory } from "react-router-dom";
 
 function BBsMain() {
-  const [bbsBody, setBBsBody] = useState([]);
+  const [bbsData, setBBsData] = useState([]);
+  const history = useHistory();
   const firebaseFetch = async () => {
-    const bbsList = await fireStore.collection("bbs").get();
+    const result = await fireStore.collection("bbs").get();
+    const bbsList = result.docs.map((doc) => {
+      const id = doc.id;
+      return { ...doc.data(), id };
+    });
 
-    fireStore
-      .collection("bbs")
-      .get()
-      .then((bbsList) => {
-        bbsList.forEach((bbs) => {
-          const item = bbs.data();
-          setBBsBody([
-            ...bbsBody,
-            <tr>
-              <td>{item.b_date}</td>
-              <td>{item.b_time}</td>
-              <td>{item.b_writer}</td>
-              <td>{item.b_subject}</td>
-            </tr>,
-          ]);
-        });
-      });
+    setBBsData(bbsList);
   };
+
+  const bbsBody = bbsData.map((bbs) => {
+    const onClick = (e) => {
+      const id = e.target.closest("TR").dataset.id;
+      history.push(`/detail/${id}`);
+    };
+    return (
+      <tr key={bbs.id} data-id={bbs.id} onClick={onClick}>
+        <td>{bbs.b_date}</td>
+        <td>{bbs.b_time}</td>
+        <td>{bbs.b_writer}</td>
+        <td>{bbs.b_subject}</td>
+      </tr>
+    );
+  });
 
   useEffect(firebaseFetch, []);
 

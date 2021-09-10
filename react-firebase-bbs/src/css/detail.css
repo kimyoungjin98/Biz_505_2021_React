@@ -1,0 +1,18 @@
+.detail_box {
+  font-size: 30px;
+  display: inline-block;
+  border: 1px solid darkolivegreen;
+  padding: 150px;
+  width: 100%;
+}
+
+.detail_box div {
+  margin: 20px 20px;
+}
+
+.detail_box div label {
+  margin: 10px 10px;
+  color: white;
+  background-color: #282c34;
+  padding: 4px;
+}

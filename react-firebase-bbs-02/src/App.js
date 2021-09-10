@@ -19,7 +19,10 @@ function App() {
         <MainNav />
       </div>
       <Route path="/" component={BBsMain} exact />
+      {/* <Switch> */}
+      <Route path="/write/:id" component={BBsWrite} exact />
       <Route path="/write" component={BBsWrite} exact />
+      {/* </Switch> */}
       <Route path="/login" component={Login} exact />
       <Route path="/join" component={Join} exact />
       <Route path="/detail/:id" component={Detail} exact />
