@@ -41,6 +41,7 @@ function BBsDetail() {
 
   return (
     <div className="bbs_detail">
+      <h1>DETAIL</h1>
       <div>
         <label>작성일자</label>
         <span>{bbs.b_date}</span>
