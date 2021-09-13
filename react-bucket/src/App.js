@@ -8,7 +8,9 @@ function App() {
       <header className="App-header">
         <Header />
       </header>
-      <BucketMain />
+      <section className="w3-container w3-margin">
+        <BucketMain />
+      </section>
       <Footer />
     </div>
   );

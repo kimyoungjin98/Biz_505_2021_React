@@ -3,7 +3,8 @@ import React from "react";
 function Header() {
   return (
     <div className="main_header">
-      <h1>MY BUCKET LIST</h1>
+      <img src="/images/sample.png"></img>
+      <p>MY BUCKET LIST</p>
     </div>
   );
 }

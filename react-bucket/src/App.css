@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 20vh;
+  background-color: white;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid lightgray;
 }
 
 .App-link {
@@ -37,27 +37,48 @@
   }
 }
 
-.main_footer {
-  background-color: #282c34;
+.main_header {
+  display: flex;
+}
+
+.main_header p {
+  font-size: 40px;
   color: white;
+  text-shadow: 1px 1px 1px gray;
+  font-weight: 500;
+}
+
+.main_header img {
+  width: 200px;
+}
+
+.main_footer {
+  background-color: white;
+  color: gray;
+  border: 1px solid lightgray;
+  padding: 10px;
 }
 
 .b_main input {
-  padding: 10px;
   border: 1px solid lightgray;
-  width: 500px;
-  margin: 5px 5px;
+  outline: none;
+}
+
+.b_main input:hover {
+  transition: 0.3s ease;
+  background-color: gray;
+  color: white;
 }
 
 .b_main table {
-  margin-left: auto;
-  margin-right: auto;
   border-collapse: collapse;
-  width: 50%;
-  height: 70px;
 }
 
 .b_main td,
 .b_main th {
   border: 1px solid lightgray;
+}
+
+.b_main td {
+  cursor: pointer;
 }
