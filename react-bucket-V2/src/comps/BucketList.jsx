@@ -9,7 +9,8 @@ function BuckList(props) {
    * BucketMain에서 보낸 배열변수와 2개의 함수를
    * props로 부터 분리해 내기
    */
-  const { bucketList, flag_change, bucket_update, bucket_complet } = props.args;
+  const { bucketList, flag_change, bucket_update, bucket_complete } =
+    props.args;
 
   const buckBody = bucketList.map((bucket) => {
     return (

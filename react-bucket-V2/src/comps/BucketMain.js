@@ -56,7 +56,7 @@ function BuckMain() {
   };
 
   const bucket_complet = (id) => {
-    const _bucketList = bucketList.map((bucket) => {
+    bucketList.map((bucket) => {
       if (bucket.b_id === id) {
         return {
           ...bucket,
@@ -67,7 +67,6 @@ function BuckMain() {
         return bucket;
       }
     });
-    setBuckList(_bucketList);
   };
 
   const args = {
