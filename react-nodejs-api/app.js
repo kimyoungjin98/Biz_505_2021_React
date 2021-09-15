@@ -25,7 +25,18 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 
 var app = express();
-app.use(cors());
+
+const whiteList = ["http://localhost:5000", "http://localhost:4000"];
+
+const corsOption = {
+  origin: (origin, callback) => {
+    const isWhiteList = whiteList.indexOf(origin) !== -1;
+    callback(null, isWhiteList);
+  },
+  credentials: true,
+};
+
+app.use(cors(corsOption));
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
