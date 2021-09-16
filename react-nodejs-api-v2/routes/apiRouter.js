@@ -57,13 +57,9 @@ router.post("/bucket", async (req, res) => {
   res.json({ result: "OK" });
 });
 
-router.put("/bucket", (req, res) => {
+router.put("/bucket", async (req, res) => {
   const body = req.body;
-  const doc = BUCKET.findOne({ b_id: body.b_id });
-  doc.overwrite(body);
-  doc.save();
-  console.log("데이터 업데이트 하기");
-  console.table(body);
+  await BUCKET.findOneAndUpdate({ b_id: body.b_id }, body);
 });
 
 // localhost:3000/api/get
