@@ -1,0 +1,64 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: linear-gradient(137deg, #5f2c82, #49a09d, #6578f2, #c2ffd8); 
+  background-size: 800% 800%; 
+  -webkit-animation: AnimationName 16s ease infinite; -moz-animation: AnimationName 16s ease infinite; -o-animation: AnimationName 16s ease infinite; animation: AnimationName 16s ease infinite;
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main_nav{
+  display:flex;
+  text-decoration: none;  
+  background-color: cornflowerblue;
+  padding:10px;
+}
+
+.main_nav li{
+  margin-left:0 auto;
+  margin:10px;
+  color:white;
+  cursor:pointer;
+  list-style: none;
+  font-size:20px;
+}
+
+@-webkit-keyframes AnimationName { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} } @-moz-keyframes AnimationName { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} } @-o-keyframes AnimationName { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} } @keyframes AnimationName { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
