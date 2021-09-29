@@ -1,0 +1,33 @@
+.main_nav{
+    display:flex;
+    text-decoration: none;  
+    background-color: cornflowerblue;
+    padding:10px;
+    font-family: 'Raleway';
+  }
+
+  .main_nav a{
+    display:inline-block;
+    color:white;
+    text-decoration: none;
+    padding:0.8rem;
+    margin-left:0 auto;
+}
+  
+  .main_nav li{
+    margin-left:0 auto;
+    margin:10px;
+    color:white;
+    cursor:pointer;
+    list-style: none;
+    font-size:20px;
+  }
+  
+  .gradient-border { --borderWidth: 5px; background: #1D1F20; position: relative; border-radius: var(--borderWidth); } .gradient-border:after { content: ''; position: absolute; top: calc(-1 * var(--borderWidth)); left: calc(-1 * var(--borderWidth)); height: calc(100% + var(--borderWidth) * 2); width: calc(100% + var(--borderWidth) * 2); background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); border-radius: calc(1.5 * var(--borderWidth)); z-index: -1; animation: animatedgradient 2s ease alternate infinite; background-size: 300% 300%; }
+  
+  @keyframes animatedgradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+  
+  @-webkit-keyframes AnimationName { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} } @-moz-keyframes AnimationName { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} } @-o-keyframes AnimationName { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} } @keyframes AnimationName { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+  
+
+

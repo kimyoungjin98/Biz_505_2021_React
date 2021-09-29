@@ -1,0 +1,64 @@
+.book_input, .book_view{
+    width:50%;
+    border:1px solid rgb(84, 131, 219, 0.3);
+    padding:30px;
+    margin:10px auto;
+    font-family: 'Raleway';
+    font-size:20px;
+    font-weight: 600;
+}
+
+.book_input div {
+    display:flex;
+}
+
+.btn_input{
+    display:flex;
+    justify-content: center;
+    margin:0 100px;
+}
+
+.book_input button{
+    padding:10px;
+    width:20%;
+    border:1px solid rgb(84, 181, 219);
+    color:white;
+    background-color: rgb(84, 131, 219);
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: rgb(44, 73, 126);
+    transition: 0.2s ease;
+}
+
+.book_input label {
+    display:inline-block;
+    text-align: right;
+    width:40%;
+    padding:10px;
+}
+
+.book_input input{
+    width:40%;
+    outline:none;
+    border:1px solid rgb(84, 131, 219,0.3);
+    padding:10px;
+}
+
+.book_input input, .book_input button{
+    margin:5px 5px;
+}
+
+.book_view {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.book_view div{
+    border:1px solid rgb(84, 131, 219, 0.3);
+    width:50%;
+    margin:5px 5px;
+}
