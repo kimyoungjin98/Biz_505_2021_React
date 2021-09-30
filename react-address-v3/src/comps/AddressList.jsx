@@ -19,11 +19,11 @@ function AddressList({ addrBook }) {
     <table>
       <thead>
         <tr>
-          <th>ID</th>
-          <th>이름</th>
-          <th>주소</th>
-          <th>전화번호</th>
-          <th>나이</th>
+          <th>No.</th>
+          <th>Name</th>
+          <th>Addr</th>
+          <th>Tel</th>
+          <th>Age</th>
         </tr>
       </thead>
       <tbody>{viewList}</tbody>
