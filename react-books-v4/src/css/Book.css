@@ -65,7 +65,13 @@ button:hover {
   margin: 5px 5px;
 }
 
-.book_list th {
-  border-collapse: collapse;
+.book_list {
+  width: 80vw;
   border: 1px solid cornflowerblue;
+  margin: 10px auto;
+}
+
+.book_list th,
+.book_list td {
+  padding: 0.6rem;
 }

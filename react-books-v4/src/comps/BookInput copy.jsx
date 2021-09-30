@@ -1,18 +1,24 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import BookContext from "../context/BookContext";
 import Mybutton from "../My/Mybutton";
 import UUID from "react-uuid";
 
 function BookInput() {
   const { book, setBook, bookList, setBookList } = useContext(BookContext);
+
+  let nextId = useRef(0);
   const onChangeHandler = (e) => {
     const { name, value } = e.target;
-    setBook({ ...book, [name]: value });
+    setBook({ ...book, [name]: value, b_id: nextId.current });
   };
 
   const bookInsert = async () => {
-    setBook({ ...book, b_id: UUID() });
+    // await setBook({ ...book, b_id: UUID() });
     await setBookList([...bookList, book]);
+
+    nextId.current++;
+
+    await setBook({ b_id: "", b_name: "", b_genre: "" });
   };
 
   return (
