@@ -1,11 +1,12 @@
 import React from "react";
+import { useAddrContext } from "../context/AppContextProvider";
 
-// 비구조화
-// const {addrBook} = props대신 직접 분해하면서 받기
-function AddressList({ addrBook }) {
+function AddressList() {
+  const { addrBook, onDelete } = useAddrContext();
+
   const viewList = addrBook.map((addr, index) => {
     return (
-      <tr key={addr.a_id}>
+      <tr key={addr.a_id} data-id={addr.a_id} onClick={onDelete}>
         <td>{index + 1}</td>
         <td>{addr.a_name}</td>
         <td>{addr.a_addr}</td>

@@ -1,18 +1,7 @@
-import UUID from "react-uuid";
+import { useAddrContext } from "../context/AppContextProvider";
 
-function AddressInput({ stateGroup }) {
-  // const { stateGroup } = props;
-  const { address, setAddress, addrBook, setAddrBook } = stateGroup;
-
-  const onChangeHandler = (e) => {
-    const { name, value } = e.target;
-    setAddress({ ...address, [name]: value });
-  };
-
-  const addrBookInsert = () => {
-    setAddress({ ...address, a_id: UUID() });
-    setAddrBook([...addrBook, address]);
-  };
+function AddressInput() {
+  const { onChangeHandler, addrBookInsert, address } = useAddrContext();
 
   return (
     <div className="adr_input">

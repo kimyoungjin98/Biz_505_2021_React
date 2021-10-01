@@ -76,6 +76,10 @@ table {
   border-collapse: collapse;
 }
 
+tbody tr {
+  cursor: pointer;
+}
+
 td,
 th {
   padding: 0.8rem;
