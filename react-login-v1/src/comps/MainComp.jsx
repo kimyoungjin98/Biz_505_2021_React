@@ -25,8 +25,8 @@ function MainComp() {
     { id: 1, title: "공지사항", link: "/notice" },
     { id: 2, title: "자유게시판", link: "/bbs" },
     user?.userid
-      ? { id: 3, title: "로그인", link: "/login", align: true }
-      : { id: 3, title: "로그아웃", link: "/login", align: true },
+      ? { id: 3, title: "로그아웃", link: "/logout", align: true }
+      : { id: 3, title: "로그인", link: "/login", align: true },
     user?.userid
       ? { id: 4, title: "마이페이지", link: "/mypage" }
       : { id: 4, title: "회원가입", link: "/join" },
@@ -47,6 +47,9 @@ function MainComp() {
       </Route>
       <Route path="/join" exact>
         <JoinForm />
+      </Route>
+      <Route path="/logout">
+        <div onClick={() => setUser([])}>d</div>
       </Route>
     </MainNav>
   );
