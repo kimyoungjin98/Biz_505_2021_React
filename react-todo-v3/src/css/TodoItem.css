@@ -8,7 +8,8 @@
 }
 
 .todo_item:hover {
-  background-color: #ddd;
+  background-color: white;
+  color: #2bc0e4;
 }
 
 .todo_delete {
@@ -28,5 +29,5 @@
 
 .checked {
   text-decoration-line: line-through;
-  color: #adb5bd;
+  color: lightgray;
 }

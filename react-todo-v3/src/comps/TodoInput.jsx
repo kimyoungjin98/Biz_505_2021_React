@@ -12,7 +12,7 @@ function TodoInput() {
         ref={inputId}
       />
       <button className="btn_insert" onClick={onClick}>
-        추가
+        Add
       </button>
     </div>
   );

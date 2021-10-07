@@ -1,0 +1,29 @@
+.login input {
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid white;
+  width: 212px;
+  color: gray;
+  font-size: 15px;
+}
+
+.login button {
+  color: #2bc0e4;
+  background-color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 100px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.login button,
+.login input {
+  margin: 0 5px;
+}
+
+.login {
+  display: flex;
+  margin-left: auto;
+}

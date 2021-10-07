@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  background-color: darkkhaki;
 }
 
 .App-logo {
@@ -16,12 +17,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 50vh;
+  background: linear-gradient(-135deg, #2bc0e4, #eaecc6) fixed;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -40,14 +41,14 @@
 }
 
 .todo_main {
-  border: 1px solid gray;
+  border: 1px solid white;
   border-bottom: 1px solid white;
   width: 50%;
   font-family: "Noto Sans KR", sans-serif;
 }
 
 .todo_main h2 {
-  border: 1px solid gray;
+  border: 1px solid white;
   background-color: black;
   padding: 3rem;
   margin: 0 auto;
@@ -68,7 +69,7 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid white;
   background-color: #282c34;
   width: 80%;
   outline: none;
@@ -77,7 +78,7 @@
 }
 
 .todo_input button {
-  width: 15vh;
+  width: 20vh;
   background-color: black;
   border: none;
   color: white;
@@ -85,4 +86,9 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 8px;
+}
+
+.todo_input button:hover {
+  transition: 0.5s ease;
+  background-color: cornflowerblue;
 }
