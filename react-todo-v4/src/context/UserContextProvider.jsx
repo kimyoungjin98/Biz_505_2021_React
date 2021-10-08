@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-import "../css/Login.css";
+import React, { createContext, useContext, useState } from "react";
 
-function Login() {
+const AppContext = createContext();
+export const useUserContext = () => useContext(AppContext);
+
+const UserContextProvider = ({ children }) => {
   const [account, setAccount] = useState({
     userid: "",
     password: "",
@@ -68,27 +70,17 @@ function Login() {
     return response.json();
   };
 
-  return (
-    <div className="login">
-      {user.userid ? (
-        <div className="logout">
-          <p>{user.userid}님 좋은하루되세요</p>
-          <button onClick={onLogout}>로그아웃</button>
-        </div>
-      ) : (
-        <div>
-          <input placeholder="아이디" name="userid" onChange={onChange} />
-          <input
-            placeholder="비밀번호"
-            name="password"
-            onChange={onChange}
-            type="password"
-          />
-          <button onClick={onLogin}>로그인</button>
-        </div>
-      )}
-    </div>
-  );
-}
+  const props = {
+    account,
+    setAccount,
+    user,
+    setUser,
+    onLogout,
+    onChange,
+    onLogin,
+  };
 
-export default Login;
+  return <AppContext.Provider value={props}>{children}</AppContext.Provider>;
+};
+
+export default UserContextProvider;

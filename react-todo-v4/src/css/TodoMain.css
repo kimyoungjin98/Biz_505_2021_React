@@ -1,0 +1,23 @@
+.todo_main_layout {
+  background-color: none;
+  width: 100%;
+  margin: 2rem auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.title {
+  padding: 2rem;
+  font-size: 5.5rem;
+  text-align: center;
+  font-weight: 100;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16);
+}
+
+.form_wrapper {
+  padding: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.list_wrapper {
+  min-height: 5rem;
+}
