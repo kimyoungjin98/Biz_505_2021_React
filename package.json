@@ -1,0 +1,19 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "* 2021년 09월 06일",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimyoungjin98/Biz_505_2021_React.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimyoungjin98/Biz_505_2021_React/issues"
+  },
+  "homepage": "https://github.com/kimyoungjin98/Biz_505_2021_React#readme"
+}
